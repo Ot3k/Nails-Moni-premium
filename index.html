@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nails-Moni — Premium</title>
+    <meta name="description" content="Премиальная студия маникюра и педикюра. Элегантный дизайн, стерильный инструмент, премиальные материалы и удобная онлайн-запись.">
+    <link rel="stylesheet" href="style_premium.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="site-loader" id="siteLoader">
+        <div class="loader-mark">
+            <span class="loader-ring"></span>
+            <strong>Nails‑Moni</strong>
+            <p>premium beauty experience</p>
+        </div>
+    </div>
+
+    <div class="noise"></div>
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
+    <div class="custom-cursor"></div>
+
+    <header class="header" id="header">
+        <div class="container header-shell">
+            <div class="logo"><a href="#hero">Nails-Moni</a></div>
+            <nav class="nav" id="nav">
+                <a href="#services">Услуги</a>
+                <a href="#prices">Цены</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <div class="header-actions">
+                <button class="header-link" id="openBookingModal" type="button">Быстрая запись</button>
+                <a href="#booking" class="header-cta magnetic">Записаться</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-video-overlay"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy reveal-up">
+                    <span class="eyebrow">Luxury nail studio</span>
+                    <h1>Премиальный маникюр<br>с вау‑эффектом</h1>
+                    <p>Тёмная luxury‑эстетика, деликатный сервис и безупречная техника. Мы превращаем обычную запись в красивый ритуал ухода.</p>
+                    <div class="hero-actions">
+                        <a href="#booking" class="btn btn-gold magnetic">Записаться онлайн</a>
+                        <button class="btn btn-glass" type="button" id="openBookingModalHero">Открыть popup</button>
+                    </div>
+                    <div class="hero-metrics">
+                        <div class="metric-card float-card">
+                            <span class="metric-value" data-counter="12">0</span>
+                            <span class="metric-label">лет опыта</span>
+                        </div>
+                        <div class="metric-card float-card delay-1">
+                            <span class="metric-value" data-counter="300">0</span>
+                            <span class="metric-label">оттенков в палитре</span>
+                        </div>
+                        <div class="metric-card float-card delay-2">
+                            <span class="metric-value" data-counter="24">0</span>
+                            <span class="metric-label">онлайн‑запись 24/7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-panel reveal-up tilt-card">
+                    <div class="hero-panel-top">
+                        <span>Signature appointment</span>
+                        <span class="status-dot">available</span>
+                    </div>
+                    <div class="hero-panel-body">
+                        <h3>Premium care set</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> стерильный инструмент</li>
+                            <li><i class="fas fa-check"></i> SPA‑уход и массаж</li>
+                            <li><i class="fas fa-check"></i> персональный подбор формы и цвета</li>
+                        </ul>
+                        <div class="hero-panel-price">от 2 500 ₽</div>
+                    </div>
+                    <div class="hero-panel-glow"></div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>scroll</span>
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </section>
+
+        <section class="signature-strip">
+            <div class="marquee">
+                <div class="marquee-track">
+                    <span>sterile care</span>
+                    <span>luxury service</span>
+                    <span>designer nails</span>
+                    <span>spa ritual</span>
+                    <span>premium pigments</span>
+                    <span>sterile care</span>
+                    <span>luxury service</span>
+                    <span>designer nails</span>
+                    <span>spa ritual</span>
+                    <span>premium pigments</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Почему нас выбирают</span>
+                    <h2>Уход, который ощущается как luxury‑ритуал</h2>
+                </div>
+                <div class="advantages-grid">
+                    <article class="advantage-card reveal-up tilt-card">
+                        <i class="fas fa-shield-heart"></i>
+                        <h3>Максимальная безопасность</h3>
+                        <p>Автоклавирование, одноразовые расходники и строгий контроль стерильности.</p>
+                    </article>
+                    <article class="advantage-card reveal-up tilt-card">
+                        <i class="fas fa-gem"></i>
+                        <h3>Премиальные материалы</h3>
+                        <p>Стойкие покрытия, комфорт в носке и богатая палитра трендовых оттенков.</p>
+                    </article>
+                    <article class="advantage-card reveal-up tilt-card">
+                        <i class="fas fa-sparkles"></i>
+                        <h3>Эффектный дизайн</h3>
+                        <p>От чистого nude до сложных акцентных дизайнов с сияющими деталями.</p>
+                    </article>
+                    <article class="advantage-card reveal-up tilt-card">
+                        <i class="fas fa-champagne-glasses"></i>
+                        <h3>Атмосфера салона</h3>
+                        <p>Тихая музыка, эстетичный интерьер и сервис, в который хочется вернуться.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Наши услуги</span>
+                    <h2>Выберите свой beauty‑сценарий</h2>
+                    <p>Каждая услуга подана как отдельный премиальный пакет с акцентом на эстетику и комфорт.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card reveal-up shine-card tilt-card">
+                        <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+                        <h3>Signature Manicure</h3>
+                        <p>Комбинированный маникюр, идеальная архитектура и деликатный уход за кожей рук.</p>
+                        <div class="service-meta"><span>75 мин</span><strong>от 1 900 ₽</strong></div>
+                    </article>
+                    <article class="service-card reveal-up shine-card tilt-card featured">
+                        <div class="service-badge">top</div>
+                        <div class="service-icon"><i class="fas fa-crown"></i></div>
+                        <h3>Premium Gel Set</h3>
+                        <p>Стойкое покрытие, выравнивание, блеск премиум‑класса и безупречный финиш.</p>
+                        <div class="service-meta"><span>95 мин</span><strong>от 2 500 ₽</strong></div>
+                    </article>
+                    <article class="service-card reveal-up shine-card tilt-card">
+                        <div class="service-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <h3>Art Design</h3>
+                        <p>Френч, chrome, cat eye, омбре, текстуры и авторский nail‑art под твой образ.</p>
+                        <div class="service-meta"><span>от 20 мин</span><strong>от 500 ₽</strong></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices" class="prices">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Прайс-лист</span>
+                    <h2>Прозрачные цены без компромиссов</h2>
+                </div>
+                <div class="prices-grid">
+                    <div class="price-card reveal-up">
+                        <h3>Маникюр</h3>
+                        <div class="price-item"><span>Классический маникюр</span><strong>1 500 ₽</strong></div>
+                        <div class="price-item"><span>Комбинированный + покрытие</span><strong>2 500 ₽</strong></div>
+                        <div class="price-item"><span>Укрепление / выравнивание</span><strong>+500 ₽</strong></div>
+                    </div>
+                    <div class="price-card reveal-up highlighted">
+                        <h3>Premium set</h3>
+                        <div class="price-item"><span>Маникюр + premium gel</span><strong>2 700 ₽</strong></div>
+                        <div class="price-item"><span>SPA‑ритуал для рук</span><strong>+800 ₽</strong></div>
+                        <div class="price-item"><span>Персональный дизайн</span><strong>от 700 ₽</strong></div>
+                    </div>
+                    <div class="price-card reveal-up">
+                        <h3>Педикюр</h3>
+                        <div class="price-item"><span>Аппаратный педикюр</span><strong>2 500 ₽</strong></div>
+                        <div class="price-item"><span>Педикюр + гель‑лак</span><strong>3 500 ₽</strong></div>
+                        <div class="price-item"><span>Медицинский уход</span><strong>3 800 ₽</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Портфолио</span>
+                    <h2>Работы с эффектом wow</h2>
+                </div>
+                <div class="portfolio-grid">
+                    <article class="portfolio-item reveal-up"><div class="portfolio-image placeholder-1"></div><div class="portfolio-overlay"><strong>Gloss nude</strong><span>clean luxury finish</span></div></article>
+                    <article class="portfolio-item reveal-up wide"><div class="portfolio-image placeholder-2"></div><div class="portfolio-overlay"><strong>Chrome shine</strong><span>зеркальный metallic look</span></div></article>
+                    <article class="portfolio-item reveal-up"><div class="portfolio-image placeholder-3"></div><div class="portfolio-overlay"><strong>French touch</strong><span>минимализм и идеальная геометрия</span></div></article>
+                    <article class="portfolio-item reveal-up"><div class="portfolio-image placeholder-4"></div><div class="portfolio-overlay"><strong>Soft pink</strong><span>деликатный свадебный стиль</span></div></article>
+                    <article class="portfolio-item reveal-up"><div class="portfolio-image placeholder-5"></div><div class="portfolio-overlay"><strong>Dark glam</strong><span>акцентный вечерний дизайн</span></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking">
+            <div class="container">
+                <div class="booking-wrapper reveal-up">
+                    <div class="booking-copy">
+                        <span class="section-tag">Онлайн‑запись</span>
+                        <h2>Забронируйте идеальное окно</h2>
+                        <p>Оставьте контакты — и мы подберём время, мастера и сценарий процедуры под ваш запрос.</p>
+                        <div class="booking-points">
+                            <div><i class="fas fa-phone"></i><span>+7 (999) 123‑45‑67</span></div>
+                            <div><i class="fab fa-telegram"></i><span>@nail_studio_bot</span></div>
+                            <div><i class="fas fa-location-dot"></i><span>Москва, Тверская, 15</span></div>
+                        </div>
+                    </div>
+                    <form class="booking-form" id="bookingForm">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <select required>
+                            <option value="">Выберите услугу</option>
+                            <option>Signature Manicure</option>
+                            <option>Premium Gel Set</option>
+                            <option>Art Design</option>
+                            <option>Педикюр</option>
+                        </select>
+                        <input type="date" required>
+                        <textarea rows="4" placeholder="Комментарий"></textarea>
+                        <button type="submit" class="btn btn-gold magnetic">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container contacts-grid">
+                <div class="contacts-card reveal-up">
+                    <span class="section-tag">Контакты</span>
+                    <h2>Мы рядом</h2>
+                    <div class="contact-list">
+                        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><strong>Адрес</strong><span>г. Москва, ул. Тверская, д. 15</span></div></div>
+                        <div class="contact-item"><i class="fas fa-clock"></i><div><strong>Часы работы</strong><span>Ежедневно: 10:00 – 21:00</span></div></div>
+                        <div class="contact-item"><i class="fas fa-phone"></i><div><strong>Телефон</strong><span>+7 (999) 123-45-67</span></div></div>
+                        <div class="contact-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><span>info@nailstudio.ru</span></div></div>
+                    </div>
+                </div>
+                <div class="contacts-map reveal-up tilt-card">
+                    <div class="map-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Здесь можно встроить карту, 2GIS или Яндекс.Карты</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-shell reveal-up">
+            <div>
+                <h3>Nails‑Moni</h3>
+                <p>Luxury beauty studio for hands & mood</p>
+            </div>
+            <div class="footer-links">
+                <a href="#services">Услуги</a>
+                <a href="#prices">Цены</a>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <div class="footer-copy">© 2026 Nails‑Moni</div>
+        </div>
+    </footer>
+
+    <div class="modal" id="bookingModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close="true"></div>
+        <div class="modal-dialog reveal-scale">
+            <button class="modal-close" id="closeBookingModal" aria-label="Закрыть"><i class="fas fa-times"></i></button>
+            <span class="section-tag">Быстрая запись</span>
+            <h3>Оставьте заявку</h3>
+            <p>Попап отлично подойдёт для кнопки в hero, sticky‑CTA или рекламы.</p>
+            <form class="modal-form" id="modalForm">
+                <input type="text" placeholder="Имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <button type="submit" class="btn btn-gold">Хочу записаться</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const body = document.body;
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.getElementById('nav');
+        const header = document.getElementById('header');
+        const cursor = document.querySelector('.custom-cursor');
+        const loader = document.getElementById('siteLoader');
+        const modal = document.getElementById('bookingModal');
+        const openers = [document.getElementById('openBookingModal'), document.getElementById('openBookingModalHero')].filter(Boolean);
+        const closeModalBtn = document.getElementById('closeBookingModal');
+
+        window.addEventListener('load', () => {
+            setTimeout(() => loader.classList.add('hidden'), 650);
+        });
+
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                mobileBtn.classList.toggle('active');
+                nav.classList.toggle('active');
+            });
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (!target) return;
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                nav.classList.remove('active');
+                mobileBtn.classList.remove('active');
+            });
+        });
+
+        const setHeaderState = () => header.classList.toggle('scrolled', window.scrollY > 24);
+        setHeaderState();
+        window.addEventListener('scroll', setHeaderState);
+
+        if (window.matchMedia('(pointer:fine)').matches && cursor) {
+            window.addEventListener('mousemove', (e) => {
+                cursor.style.transform = `translate(${e.clientX - 12}px, ${e.clientY - 12}px)`;
+            });
+            document.querySelectorAll('a, button, .service-card, .portfolio-item').forEach(el => {
+                el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+                el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+            });
+        } else if (cursor) {
+            cursor.style.display = 'none';
+        }
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.16 });
+        document.querySelectorAll('.reveal-up, .reveal-scale').forEach(el => revealObserver.observe(el));
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const el = entry.target;
+                const end = Number(el.dataset.counter);
+                let current = 0;
+                const step = Math.max(1, Math.floor(end / 30));
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= end) {
+                        current = end;
+                        clearInterval(timer);
+                    }
+                    el.textContent = current;
+                }, 36);
+                counterObserver.unobserve(el);
+            });
+        }, { threshold: 0.6 });
+        document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observe(el));
+
+        document.querySelectorAll('.tilt-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                if (window.innerWidth < 992) return;
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const rx = ((y / rect.height) - 0.5) * -10;
+                const ry = ((x / rect.width) - 0.5) * 12;
+                card.style.transform = `perspective(1200px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-6px)`;
+            });
+            card.addEventListener('mouseleave', () => card.style.transform = '');
+        });
+
+        document.querySelectorAll('.magnetic').forEach(button => {
+            button.addEventListener('mousemove', (e) => {
+                const rect = button.getBoundingClientRect();
+                const x = (e.clientX - rect.left - rect.width / 2) * 0.12;
+                const y = (e.clientY - rect.top - rect.height / 2) * 0.16;
+                button.style.transform = `translate(${x}px, ${y}px)`;
+            });
+            button.addEventListener('mouseleave', () => button.style.transform = '');
+        });
+
+        const openModal = () => {
+            modal.classList.add('active');
+            modal.setAttribute('aria-hidden', 'false');
+            body.classList.add('modal-open');
+        };
+        const closeModal = () => {
+            modal.classList.remove('active');
+            modal.setAttribute('aria-hidden', 'true');
+            body.classList.remove('modal-open');
+        };
+        openers.forEach(btn => btn.addEventListener('click', openModal));
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target.dataset.close === 'true') closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        const handleForm = (form, successText) => {
+            if (!form) return;
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = form.querySelector('button[type="submit"]');
+                const original = btn.textContent;
+                btn.textContent = successText;
+                btn.classList.add('success');
+                setTimeout(() => {
+                    form.reset();
+                    btn.textContent = original;
+                    btn.classList.remove('success');
+                    alert('Спасибо! Мы свяжемся с вами в ближайшее время.');
+                    if (form.id === 'modalForm') closeModal();
+                }, 600);
+            });
+        };
+        handleForm(document.getElementById('bookingForm'), 'Отправлено ✓');
+        handleForm(document.getElementById('modalForm'), 'Готово ✓');
+    </script>
+</body>
+</html>
